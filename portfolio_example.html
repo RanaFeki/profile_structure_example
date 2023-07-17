@@ -3,35 +3,47 @@
 <head>
     <title>My portfolio</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6164/6164124.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h2> This is Paris Paloma!
+        <h2 class="align" id="newfont"> This is Paris Paloma!
         </h2> 
-        <nav>
+        <nav class="align">
             <ul>           
-                 <li><a href= #top>Home</a></li>
-                 <li><a href= #about>About</a></li>
-                 <li><a href= #work>Work</a></li>
-                 <li><a href= #resume>Resume</a></li>
-                 <li><a href= #contact>Contact</a></li></ul>
+                 <li><a href= #top class="topstyling">Home</a></li>
+                 <li><a href= #about class="topstyling">About</a></li>
+                 <li><a href= #work class="topstyling">Work</a></li>
+                 <li><a href= #resume class="topstyling">Resume</a></li>
+                 <li><a href= #contact class="topstyling">Contact</a></li></ul>
 
         </nav>
     </header>
     <main> 
         <div id="about" >
             <h1>About Paris Paloma</h1>
-            <img src="https://yt3.googleusercontent.com/latyQYZCuL9pvmhp_BjfBMJTx9nuu2-0hI1IMEBuURLM5An-lTGYI1W-zicIxxCB-wmmTnZ55w=s900-c-k-c0x00ffffff-no-rj" height="500" width="500">
-             <p>UK singer songwriter Paris Paloma channels the experience of womanhood into her songwriting, speaking to the female experience, grief, love, death, and power. Her songwriting reads like poetry, drawing inspiration from figures throughout mythology, art history and the Romantics. Ranging from the tender and heartbreaking to the sublimely aggressive and vengeful. Her ethereal sound takes influences from dark pop, folk, and indie genres; creating a magical discography that evokes something primal and innately feminine.</p>
+            <ul style="text-align: center;">
+                <li>
+                    <img class="about" style="margin-top: 10px; box-shadow: 0 0 0 10px #bc5c5a;" src="https://yt3.googleusercontent.com/latyQYZCuL9pvmhp_BjfBMJTx9nuu2-0hI1IMEBuURLM5An-lTGYI1W-zicIxxCB-wmmTnZ55w=s900-c-k-c0x00ffffff-no-rj" height="250" width="250">
+                </li>
+                <li>   <p class="about" id="parawidth">UK singer songwriter Paris Paloma channels the experience of womanhood into her songwriting, speaking to the female experience, grief, love, death, and power. Her songwriting reads like poetry, drawing inspiration from figures throughout mythology, art history and the Romantics. Ranging from the tender and heartbreaking to the sublimely aggressive and vengeful. Her ethereal sound takes influences from dark pop, folk, and indie genres; creating a magical discography that evokes something primal and innately feminine.</p>
+                </li>
+            </ul>
+
         </div>
         <div id="work">
-            <h1> This is Paris Paloma's latest song:</h1>
-            <video width="320" height="240" controls>
-                <source src="Paris Paloma - yeti feat. Old Sea Brigade [Official Video].mp4" type="video/mp4" />
-                Please Check the video extension.
-            </video>
+            <div class="workstyle">
+                <h1> This is Paris Paloma's latest song:</h1>
+                <video width="320" height="240" controls>
+                 <source src="Paris Paloma - yeti feat. Old Sea Brigade [Official Video].mp4" type="video/mp4" />
+                 Please Check the video extension.
+                </video>
+            </div>
+            <div class="workstyle">
             <h4> Check her latest video clips on youtube </h4>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/jvU4xWsN7-A"></iframe>
+            </div>
+            <div class="workstyle">
             <h4>Other songs to check </h4>
             <dl>
                 <dt>Notre dame</dt>
@@ -50,16 +62,17 @@
                 </dd>
 
             </dl>
+            </div>
         </div>
         <div id="resume">
             <h1> Resume</h1>
             <img src="https://i0.wp.com/www.passtheaux.co/wp-content/uploads/2023/06/Paris-Paloma-Hotel-Cafe-2023-mainbar-JH.png?fit=752%2C440&ssl=1"/> <!--Paris Paloma in a concert-->
             <h4>Special skills</h4>
             <ol>
-                <li>talented in singing</li>
-                <li>good aural skills</li>
-                <li> able to perform in front of an audience</li>
-                <li>self confident</li>
+                <li style="display: list-item; font-family: 'Roboto'" >talented in singing</li>
+                <li style="display: list-item;font-family: 'Roboto'">good aural skills</li>
+                <li style="display: list-item; font-family: 'Roboto'"> able to perform in front of an audience</li>
+                <li style="display: list-item; font-family: 'Roboto'">self confident</li>
             </ol>
             <h4> Awards and charts </h4>
             <h5>Chart perfomance for labour</h5>
@@ -127,8 +140,8 @@
         </div>
     </main>
     <footer>
-        <h5> Social Media Accounts </h5>
-        <ul>
+        <h5 class="foot"> Social Media Accounts </h5>
+        <ul class="foot">
             <li><a href="https://www.instagram.com/parispaloma/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" height="30" width="30" /></a></li>
             <li><a href="https://www.youtube.com/@parispaloma"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" height="30" width="30"/></a></li>
             <li><a href="https://www.tiktok.com/@parispalomaofficial?is_from_webapp=1&sender_device=pc"><img src="https://cliply.co/wp-content/uploads/2021/02/372102780_TIKTOK_ICON_1080.png" height="30" width="30"/></a></li>
@@ -136,8 +149,8 @@
         </ul>
         <!--The user should click on the little icon to access the social media accounts-->
         <br/>
-        <h5> Tours </h5>
-        <a href="https://parispaloma.com/tour"> click here </a>
+        <h5 class="er" style="width: 1000px; text-align: end; margin-right: 10px;"> Tours </h5>
+        <a href="https://parispaloma.com/tour" class="er" id="er"> click here </a>
     </footer>
      
 </body>
